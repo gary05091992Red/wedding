@@ -15,13 +15,15 @@ const wedding = {
   musicVideoId: '_0bb30seo28',
 }
 
+const base = import.meta.env.BASE_URL
+
 const photos = [
-  { src: '/photos/1.jpg', alt: '婚禮照片 1' },
-  { src: '/photos/2.jpg', alt: '婚禮照片 2' },
-  { src: '/photos/3.jpg', alt: '婚禮照片 3' },
-  { src: '/photos/4.jpg', alt: '婚禮照片 4' },
-  { src: '/photos/5.jpg', alt: '婚禮照片 5' },
-  { src: '/photos/6.jpg', alt: '婚禮照片 6' },
+  { src: `${base}photos/1.jpg`, alt: '婚禮照片 1' },
+  { src: `${base}photos/2.jpg`, alt: '婚禮照片 2' },
+  { src: `${base}photos/3.jpg`, alt: '婚禮照片 3' },
+  { src: `${base}photos/4.jpg`, alt: '婚禮照片 4' },
+  { src: `${base}photos/5.jpg`, alt: '婚禮照片 5' },
+  { src: `${base}photos/6.jpg`, alt: '婚禮照片 6' },
 ]
 
 const currentIndex = ref(0)
