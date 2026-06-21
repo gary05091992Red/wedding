@@ -17,6 +17,10 @@ const wedding = {
 
 const base = import.meta.env.BASE_URL
 
+const invitationBannerSrc = ref(
+  `${base}photos/weddingInvitation${Math.random() < 0.5 ? 1 : 2}.png`,
+)
+
 const photos = [
   { src: `${base}photos/1.jpg`, alt: '婚禮照片 1' },
   { src: `${base}photos/2.jpg`, alt: '婚禮照片 2' },
@@ -137,7 +141,16 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="page">
+  <div class="site">
+    <header class="hero-banner">
+      <img
+        :src="invitationBannerSrc"
+        alt="曾弘宇 & 謝惠馨 婚禮邀請"
+        fetchpriority="high"
+      />
+    </header>
+
+    <div class="page">
     <div id="youtube-audio" class="youtube-audio" aria-hidden="true" />
 
     <button type="button" class="music-btn" :class="{
@@ -223,5 +236,6 @@ onUnmounted(() => {
       <p>馨意綿長，期待宇您相聚</p>
       <p class="footer-names">{{ wedding.groom }} & {{ wedding.bride }}</p>
     </footer>
+    </div>
   </div>
 </template>
