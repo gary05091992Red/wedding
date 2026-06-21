@@ -190,6 +190,10 @@ onUnmounted(() => {
           <dt>地址</dt>
           <dd>{{ wedding.address }}</dd>
         </div>
+        <div>
+          <dt>提醒</dt>
+          <dd>提供免費停車位</dd>
+        </div>
       </dl>
       <a class="btn" :href="wedding.mapUrl" target="_blank" rel="noopener noreferrer">
         開啟地圖導航
