@@ -8,7 +8,7 @@ const wedding = {
   time: '中午 12:00 入席 (12:20 開席)',
   venue: '台北士林萬麗酒店',
   address: '11141臺北市士林區福林里中山北路五段470巷8號',
-  mapUrl: 'https://maps.app.goo.gl/j9vhdbewZAf3t61D9',
+  mapUrl: `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent('台北士林萬麗酒店, 11141臺北市士林區福林里中山北路五段470巷8號')}`,
   rsvpPhone: '0958389664',
   rsvpFormUrl:
     'https://docs.google.com/forms/d/e/1FAIpQLSfy2NPD0t0RIsEUOodUu2-OJ6AdgTE1vAG68HCd8FFMkrBrBQ/viewform',
